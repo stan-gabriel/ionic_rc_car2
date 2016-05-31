@@ -6,6 +6,6 @@ import {Page} from 'ionic-angular';
 })
 export class HelloIonicPage {
   constructor() {
-
+    console.log('console log test');
   }
 }

@@ -9,10 +9,54 @@
 
 <ion-content padding class="getting-started">
 
-    <h3>First remote app!</h3>
+    <head>
+        <style>
+            body {
+                overflow	: hidden;
+                padding		: 0;
+                margin		: 0;
+                background-color: #BBB;
+            }
+            #info {
+                position	: absolute;
+                top		: 0px;
+                width		: 100%;
+                padding		: 5px;
+                text-align	: center;
+            }
+            #info a {
+                color		: #66F;
+                text-decoration	: none;
+            }
+            #info a:hover {
+                text-decoration	: underline;
+            }
+            #container {
+                width		: 30%;
+                height		: 30%;
+                overflow	: hidden;
+                padding		: 0;
+                margin		: 0;
+                -webkit-user-select	: none;
+                -moz-user-select	: none;
+            }
+        </style>
+    </head>
+    <body>
 
-    <p>
-        <button primary menuToggle>Toggle Menu</button>
-    </p>
+        <div id="info">
+            Touch the screen an <a href="http://learningthreejs.com/blog/2011/12/26/let-s-make-a-3d-game-virtual-joystick/" target="_blank">VirtualJoystick.js</a>
+            <a href="http://sebleedelisle.com/2011/04/multi-touch-game-controller-in-javascripthtml5-for-ipad/">post</a>
+            from
+            <a href="http://sebleedelisle.com/">seb.ly</a>
+            <br/>d move
+            -
+            works with mouse too as debug
+            <br/>
+            <span id="result"></span>
+        </div>
+        <div id="container"></div>
+        <script src="build/js/virtualjoystick.js/virtualjoystick.js"></script>
+    </body>
 
 </ion-content>

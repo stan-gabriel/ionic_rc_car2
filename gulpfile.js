@@ -3,14 +3,28 @@ var gulp = require('gulp'),
     del = require('del'),
     runSequence = require('run-sequence'),
     argv = process.argv;
+var mainBowerFiles = require('gulp-main-bower-files');
 
+gulp.task("main-bower-files", function() {
+    return gulp.src('./bower.json')
+        .pipe(mainBowerFiles({
+            overrides: {
+                "virtualjoystick.js": {
+                    main: [
+                        './virtualjoystick.js'
+                    ]
+                }
+            }
+        }))
+    .pipe(gulp.dest('./www/build/js'));
+});
 
 /**
  * Ionic hooks
  * Add ':before' or ':after' to any Ionic project command name to run the specified
  * tasks before or after the command.
  */
-gulp.task('serve:before', ['watch']);
+gulp.task('serve:before', ['watch',"main-bower-files"]);
 gulp.task('emulate:before', ['build']);
 gulp.task('deploy:before', ['build']);
 gulp.task('build:before', ['build']);

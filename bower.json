@@ -1,0 +1,21 @@
+{
+  "name": "ionic_rc_car2",
+  "description": "ionic_rc_car2: An Ionic project",
+  "main": "",
+  "authors": [
+    "Gabriel Stan <gstan@luxoft.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/stan-gabriel/ionic_rc_car2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "virtualjoystick.js": "*"
+  }
+}
