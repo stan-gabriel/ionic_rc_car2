@@ -3,7 +3,7 @@ import {App, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
-import {RcCarRemote1} from './pages/rc-car-remote-1/rc-car-remote-1';
+import {RcCarRemote1Page} from './pages/rc-car-remote-1/rc-car-remote-1';
 
 
 @App({
@@ -27,7 +27,7 @@ class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Rc Car Remote test 1', component: RcCarRemote1 }
+      { title: 'Rc Car Remote test 1', component: RcCarRemote1Page }
     ];
 
     // make HelloIonicPage the root (or first) page

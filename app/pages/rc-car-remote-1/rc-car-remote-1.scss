@@ -1,4 +1,5 @@
-div.joystickbody {
+
+.remote {
   overflow	: hidden;
   padding		: 0;
   margin		: 0;
@@ -18,7 +19,7 @@ div.joystickbody {
 #info a:hover {
   text-decoration	: underline;
 }
-#container {
+.joystick-remote {
   width		: 100%;
   height		: 100%;
   overflow	: hidden;

@@ -4,15 +4,17 @@
 import {Page} from 'ionic-angular';
 
 
+
 @Page({
     templateUrl: 'build/pages/rc-car-remote-1/rc-car-remote-1.html'
 })
-export class RcCarRemote1 {
-    constructor() {
-        console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "available" : "not available");
+export class RcCarRemote1Page {
 
+    onPageWillEnter() {
+        console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "available" : "not available");
+        console.log('Constructor call');
         var joystick	= new VirtualJoystick({
-            container	: document.getElementById('container'),
+            container	: document.getElementById('joystick'),
             mouseSupport	: true
         });
         joystick.addEventListener('touchStart', function(){
@@ -32,5 +34,9 @@ export class RcCarRemote1 {
                 + (joystick.left()	? ' left'	: '')
                 + (joystick.down()	? ' down' 	: '')
         }, 1/30 * 1000);
+    }
+
+    constructor() {
+
     }
 }
