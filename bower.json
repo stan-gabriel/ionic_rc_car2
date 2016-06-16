@@ -16,6 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "virtualjoystick.js": "*"
+    "virtualjoystick.js": "*",
+    "jquery-ui": "^1.11.4"
+  },
+  "devDependencies": {
+    "ionic-platform-web-client": "^0.7.1"
   }
 }

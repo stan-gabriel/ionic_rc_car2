@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {RcCarRemote1Page} from './pages/rc-car-remote-1/rc-car-remote-1';
+import {RcCarRemote2Page} from './pages/rc-car-remote-2/rc-car-remote-2'
 
 
 @App({
@@ -27,7 +28,8 @@ class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Rc Car Remote test 1', component: RcCarRemote1Page }
+      { title: 'Rc Car Remote test 1', component: RcCarRemote1Page },
+      { title: 'Rc Car Remote test 2', component: RcCarRemote2Page }
     ];
 
     // make HelloIonicPage the root (or first) page

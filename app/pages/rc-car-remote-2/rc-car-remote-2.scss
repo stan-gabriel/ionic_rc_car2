@@ -1,0 +1,57 @@
+// overwriting (liveReload css)... check if something else is affected!!
+[padding], [padding] scroll-content {
+  padding: 0;
+}// ---------------------------------------
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow:  wrap;
+  flex-flow: wrap;
+
+  font-weight: bold;
+  text-align: center;
+
+  height: 100%;
+}
+.wrapper > * {
+  flex: 1 50%;
+}
+.aside-1 {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+
+}
+.aside-2 {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.joystick-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+
+  max-width: 50%;
+  background: #f1a899;
+  height: 130px;
+  width: 130px;
+  //margin-top: auto;
+
+  border-radius: 150px;
+}
+
+.joystick-button {
+  background: #0c60ee;
+  height: 50px;
+  width: 50px;
+
+  border-radius: 150px;
+}

@@ -12,9 +12,8 @@ export class RcCarRemote1Page {
 
     onPageWillEnter() {
         console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "available" : "not available");
-        console.log('Constructor call');
         var joystick	= new VirtualJoystick({
-            container	: document.getElementById('joystick'),
+            container	: document.getElementById('joystick1'),
             mouseSupport	: true
         });
         joystick.addEventListener('touchStart', function(){
@@ -24,9 +23,10 @@ export class RcCarRemote1Page {
             console.log('up')
         });
 
-        setInterval(function(){
-            var outputEl	= document.getElementById('result');
-            outputEl.innerHTML	= '<b>Result:</b> '
+        var outputEl	= document.getElementById('result');
+
+        this.intervalJoystick = setInterval(function(){
+            outputEl.innerHTML	= '<b>Result:</b>'
                 + ' dx:'+joystick.deltaX()
                 + ' dy:'+joystick.deltaY()
                 + (joystick.right()	? ' right'	: '')
@@ -36,7 +36,10 @@ export class RcCarRemote1Page {
         }, 1/30 * 1000);
     }
 
-    constructor() {
+    onPageWillUnload(){
+        clearInterval(this.intervalJoystick);
+    }
 
+    constructor() {
     }
 }
