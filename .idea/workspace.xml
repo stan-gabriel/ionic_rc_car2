@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0398f3ed-ed96-433c-8713-3e3514a520d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ionic_rc_car2.iml" afterPath="$PROJECT_DIR$/.idea/ionic_rc_car2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.js" afterPath="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.html" afterPath="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.js" afterPath="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss" afterPath="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss" />
@@ -27,44 +26,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="rc-car-remote-2.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="rc-car-remote-2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="42" />
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rc-car-remote-2.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rc-car-remote-2.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rc-car-remote-2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="272">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello-ionic.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +79,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/pages/rc-car-remote-1/rc-car-remote-1.scss.css" />
         <option value="$PROJECT_DIR$/bower_components/virtualjoystick.js/examples/basic.html" />
-        <option value="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.js" />
         <option value="$PROJECT_DIR$/app/pages/rc-car-remote-1/remote.scss" />
         <option value="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.scss" />
         <option value="$PROJECT_DIR$/app/app.js" />
@@ -104,8 +92,9 @@
         <option value="$PROJECT_DIR$/.bowerrc" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/app/pages/rc-car-remote-1/rc-car-remote-1.js" />
-        <option value="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss" />
+        <option value="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.js" />
         <option value="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.html" />
+        <option value="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss" />
         <option value="$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.js" />
       </list>
     </option>
@@ -251,6 +240,10 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="rc-car-remote-1">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -266,10 +259,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="pages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="hello-ionic">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -368,12 +357,12 @@
       <workItem from="1464696943755" duration="22496000" />
       <workItem from="1464961983940" duration="1100000" />
       <workItem from="1464964233861" duration="1497000" />
-      <workItem from="1465374252763" duration="43951000" />
+      <workItem from="1465374252763" duration="59385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73502000" />
+    <option name="totallyTimeSpent" value="88936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="601" y="0" width="1319" height="1040" extended-state="0" />
@@ -694,16 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-1/rc-car-remote-1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-1/rc-car-remote-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -786,26 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss">
+    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-1/rc-car-remote-1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="350">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -817,6 +780,32 @@
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/rc-car-remote-2/rc-car-remote-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
