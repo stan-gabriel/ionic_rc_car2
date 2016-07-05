@@ -56,6 +56,9 @@
     border-radius: 150px;
     cursor:move;
     z-index: 9999;
+
+    // to allow drag
+    position: absolute;
   }
 }
 
@@ -80,6 +83,9 @@
 
     border-radius: 150px;
     z-index: 9999;
+
+    // to allow drag
+    position: absolute;
   }
 }
 
