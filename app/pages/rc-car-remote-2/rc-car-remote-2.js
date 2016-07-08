@@ -11,40 +11,29 @@ export class RcCarRemote2Page {
 
     constructor() {
         this.mouseHold = false;
-        this.notMoving = true;
         this.x;
         this.y;
-        this.posx;
-        this.posy
+        this.posX;
+        this.posY;
     }
 
     mouseDown(e) {
-        console.debug(e);
         this.mouseHold = true
     }
 
     mouseUp(e) {
-        // console.debug(e);
         this.mouseHold = false;
-        this.notMoving = true
     }
 
     mouseMove(e) {
         console.debug('mouse DOWN - ' + this.mouseHold);
 
         if (this.mouseHold) {
-             console.debug(e);
+            this.x = e.offsetX;
+            this.y = e.offsetY;
 
-            if(notMoving){
-
-                this.x = e.offsetX;
-                this.y = e.offsetY;
-
-                this.notMoving = false
-            }
-
-            this.posx = e.pageX - this.x;
-            this.posy = e.pageY - this.y;
+            this.posX = e.pageX - this.x;
+            this.posY = e.pageY - this.y;
             e.target.style.left = this.posx + 'px';
             e.target.style.top = this.posy + 'px'
         }
@@ -52,6 +41,20 @@ export class RcCarRemote2Page {
 
 
     ngAfterViewInit() {
-        console.debug(this.mouseHold)
+        var self = this;
+        jQuery('#engineJoystick').on('mousedown', (e) => {
+            self.mouseHold = true;
+            self.initialX = e.pageX;
+            self.initialY = e.pageY;
+        });
+        jQuery(document).on('mouseup', () => {
+            self.mouseHold = false;
+        });
+        jQuery(document).on('mousemove', (e) => {
+            if (self.mouseHold) {
+
+            }
+        });
     }
+
 }

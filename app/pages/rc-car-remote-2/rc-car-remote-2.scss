@@ -34,30 +34,24 @@
 }
 
 .joystick-engine {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-end;
-
-  max-width: 50%;
+  $joystick-size: 130px;
+  bottom: 0px;
+  right: 0px;
   background: #f1bab8;
-  height: 130px;
-  width: 130px;
-  //margin-top: auto;
-
-  border-radius: 250px;
-  margin-left: auto;
-
+  height: $joystick-size;
+  width: $joystick-size;
+  position: absolute;
+  border-radius: 50%;
   .joystick-engine-button {
+    $joystick-button-size: 40%;
     background: #0c60ee;
-    height: 50px;
-    width: 50px;
-
+    height: $joystick-button-size;
+    left: 50%-$joystick-button-size/2;
+    top: 50%-$joystick-button-size/2;
+    width: $joystick-button-size;
     border-radius: 150px;
     cursor:move;
     z-index: 9999;
-
-    // to allow drag
     position: absolute;
   }
 }

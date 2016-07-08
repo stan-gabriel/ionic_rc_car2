@@ -1,0 +1,41 @@
+// overwriting (liveReload css)... check if something else is affected!!
+[padding], [padding] scroll-content {
+  padding: 0;
+}// ---------------------------------------
+
+
+.conteiner {
+  flex-direction: row;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow:  wrap;
+  flex-flow: wrap;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+
+  .left{
+    width: 50%;
+    height: 100%;
+    .camera-zone {
+      height: 100%;
+      background: #f1f1f1;
+      position: relative;
+    }
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    .engine-zone {
+      height: 100%;
+      background: #eaf4ff;
+      position: relative;
+    }
+  }
+
+}
+
+
