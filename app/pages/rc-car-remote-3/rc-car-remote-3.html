@@ -8,14 +8,75 @@
 
 <ion-content padding class="remote3-container">
 
-    <div class="conteiner" id="joysticks_conteiner">
+    <div class="container" id="joysticks_conteiner">
 
         <div class="left">
-            <div id="zone_joystick_camera" class="camera-zone"></div>
+            <div id="zone_joystick_camera" class="camera-zone">
+                <div class="camera-joystick-rapport">
+                    <ul class="camera-data-list">
+                        <li class="list-name">Position
+                            <ul>
+                                <li>x : <span id="camera-x"></span></li>
+                                <li>y: <span id="camera-y"></span></li>
+                            </ul>
+                        </li>
+                        <li>distance: <span id="camera-distance"></span></li>
+                        <li>force: <span id="camera-force"></span></li>
+                        <li>identifier: <span id="camera-identifier"></span></li>
+                        <li>pressure: <span id="camera-pressure"></span></li>
+                        <li>Angle
+                            <ul>
+                                <li>degree: <span id="camera-degree"></span></li>
+                                <li>radian: <span id="camera-radian"></span></li>
+                            </ul>
+                        </li>
+
+                        <li>Direction:
+                            <ul>
+                                <li>x: <span id="camera-x-dir"></span></li>
+                                <li>y: <span id="camera-y-dir"></span></li>
+                                <li>angle: <span id="camera-angle-dir"></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
+
         <div class="right">
-            <div id="zone_joystick_engine" class="engine-zone"></div>
+            <div id="zone_joystick_engine" class="engine-zone">
+                <div class="engine-joystick-rapport">
+
+                    <ul class="engine-data-list">
+                        <li>Position
+                            <ul>
+                                <li>x : <span id="engine-x"></span></li>
+                                <li>y: <span id="engine-y"></span></li>
+                            </ul>
+                        </li>
+                        <li>distance: <span id="engine-distance"></span></li>
+                        <li>force: <span id="engine-force"></span></li>
+                        <li>identifier: <span id="engine-identifier"></span></li>
+                        <li>pressure: <span id="engine-pressure"></span></li>
+                        <li>Angle
+                            <ul>
+                                <li>degree: <span id="engine-degree"></span></li>
+                                <li>radian: <span id="engine-radian"></span></li>
+                            </ul>
+                        </li>
+
+                        <li>Direction:
+                            <ul>
+                                <li>x: <span id="engine-x-dir"></span></li>
+                                <li>y: <span id="engine-y-dir"></span></li>
+                                <li>angle: <span id="engine-angle-dir"></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
 
     </div>

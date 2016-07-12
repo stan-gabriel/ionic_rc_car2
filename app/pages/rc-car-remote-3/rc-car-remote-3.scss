@@ -4,7 +4,7 @@
 }// ---------------------------------------
 
 
-.conteiner {
+.container {
   flex-direction: row;
   display: -webkit-box;
   display: -moz-box;
@@ -17,13 +17,22 @@
   text-align: center;
   height: 100%;
 
-  .left{
+  .left {
     width: 50%;
     height: 100%;
     .camera-zone {
       height: 100%;
       background: #f1f1f1;
       position: relative;
+      .camera-joystick-rapport{
+        text-align: left;
+        .list-name {
+          text: #0c60ee;
+        }
+        ul {
+          list-style-type: none;
+        }
+      }
     }
   }
   .right {
@@ -33,6 +42,13 @@
       height: 100%;
       background: #eaf4ff;
       position: relative;
+      .engine-joystick-rapport{
+        text-align: left;
+        ul {
+          list-style-type: none;
+        }
+      }
+
     }
   }
 
