@@ -6,16 +6,45 @@ import {Page} from 'ionic-angular';
 @Page({
     templateUrl: 'build/pages/rc-car-remote-3/rc-car-remote-3.html'
 })
-
 export class RcCarRemote3Page {
 
     constructor() {
 
+
+
+
+
+        this.cameraData = {
+            position: {},
+            angle: {}
+        };
+        
+        this.cameraDirectionData = {
+            direction: {}
+        };
+        
+        this.engineData = {
+            position: {},
+            angle: {}
+        };
+        
+        this.engineDirectionData = {
+            direction: {}
+        }
     }
 
 
-    ngAfterViewInit() {
 
+
+
+
+
+
+
+
+    //
+
+    ngAfterViewInit() {
 //-----------Left Joystick (camera) instance--
         var cameraJoystick = nipplejs.create({
             zone: document.getElementById('zone_joystick_camera'),
@@ -23,33 +52,17 @@ export class RcCarRemote3Page {
             size: 100
         });
 
-        cameraJoystick.on('added',function (event,data) {
-            // console.log(event);
-            // console.log(data);
+        cameraJoystick.on('added', function (event, data) {
+
         });
 
-        cameraJoystick.on('move',function (event,data) {
-            // console.log(event);
-            // console.log(data);
-
-            document.getElementById('camera-x').innerHTML = data.position.x;
-            document.getElementById('camera-y').innerHTML = data.position.y;
-            document.getElementById('camera-degree').innerHTML = data.angle.degree;
-            document.getElementById('camera-radian').innerHTML = data.angle.radian;
-            document.getElementById('camera-distance').innerHTML = data.distance;
-            document.getElementById('camera-force').innerHTML = data.force;
-            document.getElementById('camera-identifier').innerHTML = data.identifier;
-            document.getElementById('camera-pressure').innerHTML = data.pressure;
+        cameraJoystick.on('move', (event, data) => {
+            this.cameraData = data;
         });
 
-        cameraJoystick.on('dir',function (event,data) {
-            // console.log(event);
-            // console.log(data)
-            document.getElementById('camera-x-dir').innerHTML = data.direction.x;
-            document.getElementById('camera-y-dir').innerHTML = data.direction.y;
-            document.getElementById('camera-angle-dir').innerHTML = data.direction.angle;
+        cameraJoystick.on('dir', (event, data) => {
+            this.cameraDirectionData = data;
         });
-
 
 
 //--------Right Joystick (steering) instance--
@@ -59,29 +72,16 @@ export class RcCarRemote3Page {
             size: 100
         });
 
-        engineJoystick.on('added',function (event,data) {
-            // console.log(event);
-            // console.log(data);
+        engineJoystick.on('added', (event, data) => {
+
         });
 
-        engineJoystick.on('move',function (event,data) {
-            // console.log(event);
-            // console.log(data);
-            document.getElementById('engine-x').innerHTML = data.position.x;
-            document.getElementById('engine-y').innerHTML = data.position.y;
-            document.getElementById('engine-degree').innerHTML = data.angle.degree;
-            document.getElementById('engine-radian').innerHTML = data.angle.radian;
-            document.getElementById('engine-distance').innerHTML = data.distance;
-            document.getElementById('engine-force').innerHTML = data.force;
-            document.getElementById('engine-identifier').innerHTML = data.identifier;
-            document.getElementById('engine-pressure').innerHTML = data.pressure;
+        engineJoystick.on('move', (event, data) => {
+            this.engineData = data;
         });
-        engineJoystick.on('dir',function (event,data) {
-            // console.log(event);
-            // console.log(data)
-            document.getElementById('engine-x-dir').innerHTML = data.direction.x;
-            document.getElementById('engine-y-dir').innerHTML = data.direction.y;
-            document.getElementById('engine-angle-dir').innerHTML = data.direction.angle;
+
+        engineJoystick.on('dir', (event, data) => {
+            this.engineDirectionData = data;
         })
     }
 }

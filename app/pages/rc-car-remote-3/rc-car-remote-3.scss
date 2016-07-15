@@ -1,7 +1,7 @@
 // overwriting (liveReload css)... check if something else is affected!!
-[padding], [padding] scroll-content {
-  padding: 0;
-}// ---------------------------------------
+//[padding], [padding] scroll-content {
+//  padding: 0;
+//}// ---------------------------------------
 
 
 .container {
@@ -17,38 +17,35 @@
   text-align: center;
   height: 100%;
 
-  .left {
+  .camera-zone {
     width: 50%;
     height: 100%;
-    .camera-zone {
-      height: 100%;
-      background: #f1f1f1;
-      position: relative;
-      .camera-joystick-rapport{
-        text-align: left;
-        .list-name {
-          text: #0c60ee;
-        }
-        ul {
-          list-style-type: none;
-        }
+    background: #f1f1f1;
+    position: relative;
+    .camera-joystick-rapport {
+      text-align: left;
+      .list-name {
+        color: #0c60ee;
+      }
+      ul {
+        list-style-type: none;
       }
     }
   }
-  .right {
+
+  .engine-zone {
     width: 50%;
     height: 100%;
-    .engine-zone {
-      height: 100%;
-      background: #eaf4ff;
-      position: relative;
-      .engine-joystick-rapport{
-        text-align: left;
-        ul {
-          list-style-type: none;
-        }
+    background: #eaf4ff;
+    position: relative;
+    .engine-joystick-rapport {
+      text-align: left;
+      .list-name {
+        color: #0c60ee;
       }
-
+      ul {
+        list-style-type: none;
+      }
     }
   }
 
