@@ -51,15 +51,27 @@ export class RcCarRemote3Page {
 
         cameraJoystick.on('move', (event, data) => {
             this.cameraData = data;
+
             //send camera joystick coordinates
             this.socket.emit('camera',{
-                'camera-x': data.position.x,
-                'camera-y': data.position.y
+                'x': data.position.x,
+                'y': data.position.y,
+                'degree': data.angle.degree,
+                'radian': data.angle.radian,
+                'distance': data.distance,
+                'force': data.force
             });
         });
 
         cameraJoystick.on('dir', (event, data) => {
             this.cameraDirectionData = data;
+
+            this.socket.emit('camera-dir',{
+                'x': data.direction.x,
+                'y': data.direction.y,
+                'angele': data.direction.angle
+
+            });
         });
 
 
@@ -79,13 +91,25 @@ export class RcCarRemote3Page {
 
             //send engine joystick coordinates
             this.socket.emit('engine',{
-                'engine-x': data.position.x,
-                'engine-y': data.position.y
+                'x': data.position.x,
+                'y': data.position.y,
+                'degree': data.angle.degree,
+                'radian': data.angle.radian,
+                'distance': data.distance,
+                'force': data.force
+
+
             });
         });
 
         engineJoystick.on('dir', (event, data) => {
             this.engineDirectionData = data;
+
+            this.socket.emit('engine-dir',{
+                'x': data.direction.x,
+                'y': data.direction.y,
+                'angle': data.direction.angle
+            });
         });
 
 

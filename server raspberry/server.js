@@ -19,20 +19,31 @@ var server = http.createServer(function (request, response) {
             socket.emit('date', {'date': new Date()});
         }, 1000);
 
-        //camera engine data
-        socket.on('camera', function (data) {
-            console.log('camera -----' + new Date())
-        });
-
-        //car engine data
-        // socket.on('engine', function (data) {
-        //    //console.log(data)
-        // });
-
         //recieve client data -> keyboard input
         socket.on('client_data', function(data){
             process.stdout.write(data.letter);
         });
+
+
+        //camera engine data
+        socket.on('camera', function (data) {
+            console.log(data)
+        });
+        //camera engine direction data
+        socket.on('camera-dir', function (data) {
+            console.log(data)
+        });
+
+        //car engine data
+        socket.on('engine', function (data) {
+           console.log(data)
+        });
+        //car engine direction data
+        socket.on('engine-dir', function (data) {
+            console.log(data)
+        });
+
+
     });
 
 
