@@ -25,7 +25,9 @@ export class RcCarRemote3Page {
             direction: {}
         };
 
-        this.socket = io.connect('http://localhost:8001');
+        this.socket = io.connect('http://stan.localtunnel.me', {
+            'force new connection': true
+        });
     }
 
 

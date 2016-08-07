@@ -27,7 +27,8 @@ var server = http.createServer(function (request, response) {
 
         //camera engine data
         socket.on('camera', function (data) {
-            console.log(data)
+            console.log(data);
+            // cameraMoveX(data.distance, data.angle.degree)   //TODO for rpi error on parameters
         });
         //camera engine direction data
         socket.on('camera-dir', function (data) {
@@ -43,10 +44,7 @@ var server = http.createServer(function (request, response) {
             console.log(data)
         });
 
-
     });
-
-
 
 
     var path = url.parse(request.url).pathname;
@@ -83,3 +81,29 @@ server.listen(8001);
 console.log("Server running at 'localhost:8001'");
 
 io.listen(server);
+
+
+
+
+
+// ######################
+//    for raspbarry Pi    -required --> https://github.com/fivdi/pigpio
+// ######################
+var Gpio = require('pigpio').Gpio,
+    motor = new Gpio(18, {mode: Gpio.OUTPUT}),
+    pulseWidth = 1000,
+    speed = 1;
+
+cameraMoveX = function (speed, angleDegree) {
+    motor.servoWrite(pulseWidth);
+
+    if(angleDegree >= 180){
+        speed = -Math.abs(speed)
+    }
+    pulseWidth += speed;
+    if (pulseWidth >= 2500) {
+        speed = 0;
+    } else if (pulseWidth <=700) {
+        speed = 0;
+    }
+};
